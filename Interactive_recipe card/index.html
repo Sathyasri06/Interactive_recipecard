@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="recipe-card">
+            <h1>BRIYANI</h1>
+            <img src="briyani1.jpg" alt="briyani"class="recipe-image">
+                <div class="content">
+                <p><strong>Preparation Time:</strong> 55 minutes</p>
+                <p><strong>Serving size:</strong> 2</p>
+            </div>
+            <button id="toggle-ingredients">View Ingredients</button>
+            <ul id="ingredients-list"class="hidden">
+                
+                    <li> Basmathi Rice(500g)</li>
+                    <li> Water(1.5-2 liters)</li>
+                    <li> Salt (2 teaspoons)</li>
+                    <li> bay leaves(2-3)</li>
+                    <li> Green cardamom pods(4-5)</li>
+                    <li> Cloves(4-5)</li>
+                    <li> Cinnamon sticks(1-2)</li>
+                    <li> Cumin seeds(1 teaspoon)</li>
+                    <li> Black pepercorns(5-6)</li>
+                    <li> Meat(Chicken 1kg cut into pieces)</li>
+                    <li> Onions(3 large thinly sliced)</li>
+                    <li> Tomatoes(2 medium chopped)</li>
+                    <li> Ginger-Garlic Paste (2 tablesppons)</li>
+                    <li> Green Chilies(4-5 slit)</li>
+                    <li> Yogurt(200 grams)</li>
+                    <li> Mint Leaves(1 cup chopped)</li>
+                    <li> Coriander Leavs(1 cup chopped)</li>
+                    <li> Ghee or Oil(4 tablesppons)</li>
+                    <li> Lemon Juice(From 1 lemon)</li>
+                    <li> Salt(to taste)</li>
+                    <li> Saffron (A pinch optional,for color)</li>
+                    <li> Food Color(optional)</li>
+            </ul>
+            <button id="toggle-steps">View Steps</button>
+            <ol id="steps-list" class="hidden">
+                <li>Step1: In a large bowl mix the given ingredients </li>
+                <li>Step2: Mix well and let it marinate for at least 30 minutes</li>
+                <li>Step3: Rinse the basmati rice under cold water until the water runs excess starch.soak rice in 30 minutes</li>
+                <li>Step4: Cook the meat</li>
+                <li>Step5: Cook on low heat for about 15-20minutes if using pressure cooker,weight on the lid</li>
+                <li>Step6: Turn off the heat and let it for 10min before opening the lid and serve it</li>
+            </ol>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <button id="start-cooking">Start Cooking</button>
+            <button id="next-step" class="hidden">Next Step</button>
+            <div class="timer hidden">
+                <p>Time Remaining: <span id="time-remaining">30:00</span></p>
+            </div>
+            
+            </div>
+            </div>
+    </div>
+    
+</body>
+</html>

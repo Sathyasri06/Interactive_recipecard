@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    background: border-box;
+    
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(POSTERBRI.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    margin: 0;
+}
+
+.recipe-card {
+    background-color:white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.9;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+.recipe-image {
+    max-width:70%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #000000b7;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover {
+    background-color:rgb(214, 191, 172);
+    color: black;
+}
+.hidden {
+    display: none;
+}
+ul, ol {
+    text-align: left;
+    padding: 0;
+    list-style-position: inside;
+    color: black;
+    
+}
+li:hover {
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+.progress-bar {
+    width: 100%; 
+    background-color:rgb(72, 48, 12);
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 0;
+    overflow: hidden; 
+    box-sizing: border-box; 
+}
+  
+#progress {
+    width: 0; 
+    height: 10px;
+    background-color:bisque;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.timer {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+@media (max-width: 400px) {
+    .recipe-card {
+        padding: 15px;
+    }
+    button {
+        width: 100%;
+        margin: 5px 0;
+        
+    }
+}
+
+@media print {
+    body {
+        background-color:rgb(151, 83, 11);
+    }
+    .recipe-card {
+        box-shadow: none;
+    }
+    button {
+        display: none;
+    }
+    
+}
